@@ -1,0 +1,128 @@
+/*Outsmart the normal box model sizing rules!*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*header*/
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #836ABB;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+header nav li {
+  background-color: #8468B3;
+  float: left;
+  border-right: 4px solid #6B4F9A;
+  list-style: none;
+  padding: .5rem;
+  width: 14.28%;
+  text-align: center;
+}
+/*This ensures that the last item in the list doesn't have a border*/
+.lastItem {
+  border-right: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+/*main area */
+aside {
+  clear: both;
+  background-color: #C0B2D5;
+  float: left;
+  width: 20%;
+  text-align: center;
+  min-height: 600px;
+}
+
+  aside ul {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  aside li {
+    padding: .5rem;
+  }
+
+    aside li a {
+      list-style-type: none;
+      text-decoration: none;
+      color: white;
+    }
+
+article {
+  float: right;
+  width: 80%;
+  background-color: #E1E4E9;
+  text-align: center;
+  min-height: 600px;
+  /*margin-top: 0rem;
+  margin-bottom: 10rem;*/
+}
+
+  article div {
+    margin: 5rem;
+    text-align: left;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+  }
+  article div img{
+    float:left;
+    max-width:7.5rem;
+    margin-right:.5rem;
+
+  }
+
+  article figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+    article figure img {
+      max-width: 50%;
+    }
+
+    article figure figcaption {
+      padding-left: 10rem;
+      padding-right: 10rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+footer {
+  clear: both;
+  text-align: center;
+  height: 100px;
+}
+
+  footer ul {
+    padding-left: 35%;
+    padding-right: 35%;
+    height: inherit;
+  }
+
+  footer li {
+    list-style: none;
+    float: left;
+    padding: 1rem;
+    width: 33.33%;
+  }
+
+  footer img {
+    max-width: 3rem;
+  }
