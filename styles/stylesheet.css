@@ -81,12 +81,12 @@ article {
     -moz-column-gap: 40px; /* Firefox */
     column-gap: 40px;
   }
-  article div img{
-    float:left;
-    max-width:7.5rem;
-    margin-right:.5rem;
 
-  }
+    article div img {
+      float: left;
+      max-width: 7.5rem;
+      margin-right: .5rem;
+    }
 
   article figure {
     margin-top: 2rem;
